@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rosa & Café</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛍️</text></svg>">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="logo">Rosa & Café</a>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <nav class="nav" id="nav">
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+        <a id="headerWhats" class="btn-whats" target="_blank">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Destaque -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <h1>Estilo e Elegância</h1>
+      <p>Moda Feminina e Masculina com qualidade e preço justo</p>
+      <a href="#produtos" class="btn">Ver Produtos</a>
+    </div>
+  </section>
+
+  <!-- Filtros -->
+  <section class="section" id="produtos">
+    <div class="container">
+      <h2 class="section-title">Nossos Produtos</h2>
+      
+      <div class="filters" id="filters">
+        <button class="filter is-active" data-filter="all">Todos</button>
+        <button class="filter" data-filter="fem">Feminino</button>
+        <button class="filter" data-filter="masc">Masculino</button>
+      </div>
+
+      <div class="products-grid" id="products">
+        <div class="loading">Carregando produtos...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="section contact" id="contato">
+    <div class="container">
+      <h2 class="section-title">Fale Conosco</h2>
+      <div class="contact-info">
+        <p>📍 <span id="contactAddr">Rua Exemplo, 123 - Centro</span></p>
+        <p>📞 <a id="contactPhone" href="tel:(00)00000-0000">(00) 00000-0000</a></p>
+        <p>💬 <a id="ctaWhats" target="_blank">Abrir WhatsApp</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="ano">2026</span> Rosa & Café — Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a id="whatsFloat" class="whats-float" target="_blank">💬</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
